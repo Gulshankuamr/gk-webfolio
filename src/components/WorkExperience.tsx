@@ -139,7 +139,11 @@ const WorkExperience: React.FC = () => {
             <span className="text-xs sm:text-sm text-gray-300">Professional Experience</span>
           </div>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent mb-3 sm:mb-4">
-            Work Experience
+             
+            <span className="text-white">Work </span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500">
+              Experience
+            </span>
           </h2>
           <p className="text-sm sm:text-base md:text-xl text-gray-400 max-w-2xl mx-auto">
             Building impactful solutions that transform industries

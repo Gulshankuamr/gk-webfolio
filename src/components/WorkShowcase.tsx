@@ -155,7 +155,7 @@ export default function WorkShowcaseSnapping() {
     },
     {
       id: 5,
-      link: "https://talaganarajesh.vercel.app/",
+      link: "https://gk-webfolio.vercel.app/",
       title: "Portfolio",
       tagline: "Dynamic and interactive portfolio showcasing my work and skills.",
       description:

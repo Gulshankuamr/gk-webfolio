@@ -84,9 +84,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Gulshan Kumar",
-              image: "https://gulshankumar.vercel.app/myimage.png",
+              image: "https://gk-webfolio.vercel.app/myimage.png",
               jobTitle: "Full Stack Web Developer",
-              url: "https://gulshankumar.vercel.app",
+              url: "https://gk-webfolio.vercel.app",
               sameAs: [
                 "https://www.linkedin.com/in/gulshan-kumar-61b446253/",
                 "https://github.com/Gulshankuamr",
@@ -127,7 +127,7 @@ export default function RootLayout({
               },
               mainEntityOfPage: {
                 "@type": "WebPage",
-                "@id": "https://gulshankumar.vercel.app",
+                "@id": "https://gk-webfolio.vercel.app",
               },
             }),
           }}

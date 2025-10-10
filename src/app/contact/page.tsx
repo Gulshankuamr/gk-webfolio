@@ -7,6 +7,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import emailjs from "@emailjs/browser";
 import { FaWhatsapp, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa";
+import SplashCursor from '../about/SplashCursor'
+
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -258,6 +260,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+      <SplashCursor/>
     </section>
   );
 }

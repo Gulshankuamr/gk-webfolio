@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import SplashCursor from './SplashCursor'
 
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 import myPhoto from "/public/myimage.png";
@@ -141,6 +142,7 @@ export default function HeroSection() {
           </a>
         </motion.div>
       </div>
+      <SplashCursor/> 
     </div>
   );
 }

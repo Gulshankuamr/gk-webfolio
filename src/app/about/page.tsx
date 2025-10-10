@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {  Linkedin,  Mail, Instagram , FileUser} from 'lucide-react';
+import SplashCursor from './SplashCursor'
 
 
 // Import social icons
@@ -525,6 +526,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+         <SplashCursor />
     </div>
   );
 }

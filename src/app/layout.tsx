@@ -7,6 +7,7 @@ import NavBar from "../components/Navbar";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"; // ✅ Import added
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

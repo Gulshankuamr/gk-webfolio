@@ -276,11 +276,11 @@ const WorkExperience: React.FC = () => {
                   <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-between pt-5 border-t border-zinc-800">
                     <p className="text-sm text-gray-400 flex items-center gap-2">
                       {work.company === 'ByteUprise'
-                        ? <Tractor className="w-5 h-5 text-green-400" />
+                        ? <Globe className="w-5 h-5 text-green-400" />
                         : <Globe className="w-5 h-5 text-green-400" />}
                       {work.company === 'ByteUprise'
-                        ? 'Revolutionizing agriculture through technology'
-                        : 'Delivering technology-driven solutions that enhance usability and efficiency.'}
+                        ? 'Explore my journey at ByteUprise'
+                        : 'Explore my journey at Techpile'}
                     </p>
                     <motion.a
                       href={work.website}

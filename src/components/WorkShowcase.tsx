@@ -16,6 +16,7 @@ import gsap from "/public/assets/gsap.png";
 import PortfolioImage from "/public/assets/portfolio.png";
 import blogsphere from "/public/assets/blogsphere.png";
 import videochatapp from "/public/assets/videochatapp.png";
+import foodtrackerimage from "/public/assets/foodtrackerimage.png"
 
 import html from "/public/assets/html.png";
 import csss from "/public/assets/csss.png";
@@ -231,6 +232,37 @@ export default function WorkShowcaseSnapping() {
       accentColor: "bg-teal-500",
       bgGradient: "from-teal-800 to-teal-600",
     },
+    {
+  id: 8,
+  link: "https://foodtrecker-ai.vercel.app/",
+  title: "FoodTracker – AI Nutrition SaaS App",
+  tagline: "AI-powered food analysis and health tracking platform.",
+  description:
+    "Developed a modern, responsive SaaS web application using Next.js and Tailwind CSS that analyzes meal images to detect nutrition data like protein, calories, carbs, and vitamins using AI-based image recognition. Includes authentication, dashboard, payment integration, and user history with localStorage persistence.",
+  techStack: [
+    { name: "Next.js", icon: nextjs },
+    { name: "React", icon: react },
+    { name: "Tailwind CSS", icon: tailwindcss },
+    { name: "TypeScript", icon: typescript },
+    { name: "GSAP", icon: gsap },
+    { name: "REST API", icon: restapi },
+   { name: "Framer Motion", icon: framer }
+  ],
+  features: [
+    "AI-powered meal image recognition for nutrition analysis",
+    "Dynamic dashboards with nutrient visualizations (Recharts/Chart.js)",
+    "User authentication, profiles, and history tracking",
+    "SaaS pricing plans with integrated Stripe/Razorpay payments",
+    "Responsive modern UI with glassmorphism and dark mode support",
+    "LocalStorage-based persistence for offline user data",
+    "Role-based access for Free, Pro, and Premium users",
+    "Smooth animations with Framer Motion and toast notifications",
+  ],
+  image: foodtrackerimage,
+  accentColor: "bg-green-500",
+  bgGradient: "from-green-800 to-green-600",
+}
+
   ];
 
   const toggleExpandedMobile = (index: number) => {

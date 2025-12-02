@@ -30,6 +30,27 @@ export default function AboutPage() {
   const timelineRefs = useRef<(HTMLDivElement | null)[]>([]);
 
  const timelineItems: TimelineItem[] = [
+   {
+    id: 0,
+    date: "Sep 2025 - Oct 2025",
+    title: "Freelance Frontend Developer",
+    company: "Indian Travels (Freelance Client)",
+    location: "Remote",
+    remote: true,
+    description:
+      "Designed and developed a modern, responsive travel agency website with full frontend implementation and partial backend integration.",
+    achievements: [
+      "Built complete UI including layout, animations & UX workflows.",
+      "Integrated backend APIs for booking, forms, and authentication.",
+      "Implemented two freelance projects during this period.",
+      "Ensured smooth user experience with modern UI libraries.",
+      "Delivered high-quality responsive travel agency platform."
+    ],
+    skills: [
+      "Next.js", "React.js","JavaScript","TypeScript", "Tailwind CSS", "Framer Motion", "HTML", "CSS", "Modern UI Libraries"
+    ],
+   
+  },
   {
     id: 1,
     date: "JAN 2025 - AUG 2025",

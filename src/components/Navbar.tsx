@@ -107,11 +107,16 @@ const NavBar: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden md:flex ml-4 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/10 hover:bg-white/20 transition">
-          <Link href="/contact" className="text-white text-sm font-medium">
-            Book a Call
-          </Link>
-        </div>
+       <div className="hidden md:flex ml-4 rounded-full px-4 py-2 border border-white/10 transition 
+                bg-white/10 hover:bg-green-600">
+  <Link 
+    href="/contact" 
+    className="text-white text-sm font-medium hover:text-white"
+  >
+    Book a Call
+  </Link>
+</div>
+
       </div>
 
       {/* Mobile Menu */}

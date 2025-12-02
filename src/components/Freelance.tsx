@@ -53,6 +53,8 @@ export default function FreelanceServicesSection() {
           className="md:col-span-12"
         />
 
+     
+
         {/* Service Cards */}
         {freelanceServices.map((service, idx) => (
           <BentoCard

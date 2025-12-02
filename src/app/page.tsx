@@ -31,8 +31,7 @@ export default function Home() {
 
     <WorkExperience/>
 
-
-
+    
      <Services/>
      <Marquee/>
       

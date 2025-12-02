@@ -24,7 +24,10 @@ import type { StaticImageData } from 'next/image';
 // Logos
 import byteupriselogo from '/public/assets/byteupriselogo.png';
 import logo from '/public/assets/logo.png';
-import FreelanceWork from './freelanceWork';
+import MyFreelanceWork from './MyFreelanceWork';
+
+
+
 
 // --- Work Experience Data Interface and Array ---
 interface WorkExperience {
@@ -268,7 +271,7 @@ const WorkExperience: React.FC = () => {
 
   return (
     <section className="py-16 sm:py-20 w-full bg-black text-white relative overflow-hidden">
-       <FreelanceWork/>
+       <MyFreelanceWork/>
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-5">
         <div

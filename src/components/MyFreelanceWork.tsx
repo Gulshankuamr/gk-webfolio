@@ -69,7 +69,7 @@ const cardVariants: Variants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
 };
 
-const FreelanceWork: React.FC = () => {
+const MyFreelanceWork: React.FC = () => {
 
   const renderFreelanceCard = (project: FreelanceProject, idx: number) => (
     <motion.div
@@ -220,4 +220,4 @@ const FreelanceWork: React.FC = () => {
   );
 };
 
-export default FreelanceWork;
+export default MyFreelanceWork;

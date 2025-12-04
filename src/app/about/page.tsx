@@ -156,6 +156,54 @@ export default function AboutPage() {
 
 ];
 
+
+
+
+const Tooltip = ({
+  icon,
+  label,
+  href,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  href: string;
+}) => {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative group flex flex-col items-center justify-center"
+    >
+      {/* Icon Circle */}
+      <div
+        className="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 
+                   rounded-full border border-gray-400/30 text-gray-400 
+                   hover:bg-blue-600 hover:text-white transition-all duration-300"
+      >
+        {icon}
+      </div>
+
+      {/* Tooltip */}
+      <span
+        className="absolute -top-10 left-1/2 -translate-x-1/2 scale-75
+                   opacity-0 group-hover:opacity-100 group-hover:scale-100 
+                   group-hover:-top-14 bg-blue-600 text-white text-xs font-medium
+                   px-3 py-1 rounded-md shadow-lg transition-all duration-300 z-20"
+      >
+        {label}
+
+        {/* Arrow */}
+        <span
+          className="absolute left-1/2 -bottom-1 w-2 h-2 bg-blue-600 
+                     rotate-45 -translate-x-1/2"
+        ></span>
+      </span>
+    </Link>
+  );
+};
+
+
 // Education Section
 
   
@@ -318,52 +366,33 @@ export default function AboutPage() {
 <p>As a Frontend Developer (React.js & Next.js), I have hands-on experience in developing scalable web applications. My expertise lies in React.js, Next.js, and modern JavaScript, along with creating dynamic UIs, integrating third-party APIs, and implementing responsive designs using Tailwind CSS and Bootstrap.</p>
 
 <p>Beyond coding, I’m constantly exploring new technologies, brainstorming fresh ideas, and striving to level up every single day. My goal is simple — to craft impactful web solutions and grow into a top developer who makes a difference.</p>
-<div className="flex justify-center lg:justify-start gap-4 pt-2 mb-2">
-  {/* LinkedIn */}
-  <Link 
-    href="https://www.linkedin.com/in/gulshan-kumar-61b446253/" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="LinkedIn"
-  >
-    <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-gray-400 hover:text-white transition-colors" />
-    <b>Linkedln</b>
-  </Link>
+ <div className="flex justify-center lg:justify-start gap-4 pt-2 mb-2">
 
-  {/* Instagram */}
-  <Link 
-    href="https://www.instagram.com/developer_tipss/" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    aria-label="Instagram"
-  >
-    <Instagram className="w-5 h-5 md:w-6 md:h-6 text-gray-400 hover:text-white transition-colors" />
-    <b>Instagram</b>
-  </Link>
+      <Tooltip
+        icon={<Linkedin className="w-5 h-5 md:w-6 md:h-6" />}
+        label="LinkedIn"
+        href="https://www.linkedin.com/in/gulshan-kumar-61b446253/"
+      />
 
-  {/* Email */}
-  <Link 
-    href="mailto:gulshan73939314@gmail.com" 
-    aria-label="Email"
-  >
-    <Mail className="w-5 h-5 md:w-6 md:h-6 text-gray-400 hover:text-white transition-colors" />
-    <b>Email</b>
-  </Link>
+      <Tooltip
+        icon={<Instagram className="w-5 h-5 md:w-6 md:h-6" />}
+        label="Instagram"
+        href="https://www.instagram.com/developer_tipss/"
+      />
 
-  {/* Resume Icon Button */}
-  <Link
-    href="/resumegk.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    download
-    aria-label="Resume"
-    className=""
-  >
-    {/* Tumhara resume icon, yahan main example SVG laga raha hoon */}
-   <FileUser className="w-5 h-5 md:w-6 md:h-6 text-gray-400 hover:text-white transition-colors" />
-    <b>Resume</b>
-  </Link>
-</div>
+      <Tooltip
+        icon={<Mail className="w-5 h-5 md:w-6 md:h-6" />}
+        label="Email"
+        href="mailto:gulshan73939314@gmail.com"
+      />
+
+      <Tooltip
+        icon={<FileUser className="w-5 h-5 md:w-6 md:h-6" />}
+        label="Resume"
+        href="/resumegk.pdf"
+      />
+
+    </div>
 
 
 

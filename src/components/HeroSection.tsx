@@ -82,7 +82,7 @@ export default function HeroSection() {
             <div className="group block md:block cursor-pointer h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full overflow-hidden border-2 border-white/20 my-1 sm:my-2 md:my-0">
               <Image
                 src={myPhoto}
-                alt="Talagana Rajesh"
+                alt="Gulshan Kumar"
                 width={56}
                 height={56}
                 className="h-full w-full object-cover"
@@ -95,7 +95,7 @@ export default function HeroSection() {
               >
                 <Image
                   src={myPhoto}
-                  alt="Talagana Rajesh"
+                  alt="Gulshan Kumar"
                   width={120}
                   height={120}
                   className="object-cover w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48"

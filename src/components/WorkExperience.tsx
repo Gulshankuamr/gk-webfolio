@@ -24,7 +24,7 @@ import type { StaticImageData } from 'next/image';
 // Logos
 import byteupriselogo from '/public/assets/byteupriselogo.png';
 import logo from '/public/assets/logo.png';
-import MyFreelanceWork from './MyFreelanceWork';
+// import MyFreelanceWork from './MyFreelanceWork';
 
 
 
@@ -271,7 +271,7 @@ const WorkExperience: React.FC = () => {
 
   return (
     <section className="py-16 sm:py-20 w-full bg-black text-white relative overflow-hidden">
-       <MyFreelanceWork/>
+       {/* <MyFreelanceWork/> */}
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-5">
         <div

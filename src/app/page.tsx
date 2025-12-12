@@ -22,9 +22,23 @@ export default function Home() {
      <Grids/>
      <WorkShowcase/>
 
-     <div className="bg-black flex justify-center items-center w-full">
-     <Link href="/projects" className="bg-zinc-900 w-40 text-center flex flex-row justify-center items-center gap-2 rounded-full text-white px-3 py-1">Explore More <FaArrowRight />  </Link>
-     </div>
+  <div className="bg-black flex justify-center items-center w-full ">
+  <Link 
+    href="/projects"
+    className="
+      bg-zinc-900 
+      w-40 
+      text-center 
+      flex flex-row justify-center items-center gap-2 
+      rounded-full text-white px-3 py-2
+      transition-all duration-300 ease-in-out
+      hover:bg-green-600 hover:text-white hover:scale-105
+    "
+  >
+    Explore More <FaArrowRight />
+  </Link>
+</div>
+
      
      <EnhancedTechStack/>
 

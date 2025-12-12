@@ -1,0 +1,73 @@
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ----- GLASS CARD DESIGN ----- */
+.enquiry-card {
+  width: 90%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* ----- INPUT STYLE ----- */
+.input-box {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  background: rgba(0,0,0,0.4);   /* dark glass look */
+  border: 1px solid rgba(255,255,255,0.2);
+
+  color: white;                  /* text always white */
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+/* Hover effect — blue/purple glass */
+.input-box:hover {
+  background: rgba(120, 80, 255, 0.4);
+  border-color: rgba(150, 120, 255, 0.8);
+}
+
+/* Focus effect — smooth glow */
+.input-box:focus {
+  background: rgba(140, 90, 255, 0.5);
+  border-color: #a78bfa;      /* Light purple */
+  box-shadow: 0 0 8px rgba(167, 139, 250, 0.7);
+}
+
+/* Ensure options text stays white */
+.input-box option {
+  background: #1a1a1a;
+  color: white;
+}
+
+
+.input-box::placeholder {
+  color: #ddd;
+}
+
+/* ----- ANIMATION ----- */
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-popIn {
+  animation: popIn 0.35s ease;
+}

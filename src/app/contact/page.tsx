@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { FaWhatsapp, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa";
-import SplashCursor from "../about/SplashCursor";
+// import SplashCursor from "../about/SplashCursor";
 
 // ----------------------------
 // Validation Schema
@@ -251,7 +251,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <SplashCursor />
+      {/* <SplashCursor /> */}
     </section>
   );
 }

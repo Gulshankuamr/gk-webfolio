@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {  Linkedin,  Mail, Instagram , FileUser} from 'lucide-react';
-import SplashCursor from './SplashCursor'
+// import SplashCursor from './SplashCursor'
 
 
 // Import social icons
@@ -576,7 +576,7 @@ const Tooltip = ({
           </div>
         </div>
       </section>
-         <SplashCursor />
+         {/* <SplashCursor /> */}
     </div>
   );
 }

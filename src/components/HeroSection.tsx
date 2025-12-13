@@ -8,7 +8,11 @@ import Link from "next/link";
 import EnquiryWidget from '@/app/enquiry/EnquiryWidget'
 
 import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
-import myPhoto from "/public/myimage.png";
+// import myPhoto from "/public/myimage.png";
+// const myPhoto = "/myimage.png";
+const myPhoto = "/myimage.png";
+
+
 
 export default function HeroSection() {
   return (
@@ -84,13 +88,22 @@ export default function HeroSection() {
             
             {/* Profile Image - Show on mobile with different styling */}
             <div className="group block md:block cursor-pointer h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full overflow-hidden border-2 border-white/20 my-1 sm:my-2 md:my-0">
-              <Image
+              {/* <Image
                 src={myPhoto}
                 alt="Gulshan Kumar"
                 width={56}
                 height={56}
                 className="h-full w-full object-cover"
-              />
+              /> */}
+
+              <Image
+  src={myPhoto}
+  alt="Gulshan Kumar"
+  width={56}
+  height={56}
+  className="h-full w-full object-cover "
+/>
+
 
               {/* Hover Popup */}
               <div

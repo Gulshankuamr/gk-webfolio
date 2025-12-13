@@ -21,12 +21,10 @@ import {
 import Image from 'next/image';
 import type { StaticImageData } from 'next/image';
 
-// Logos
-import byteupriselogo from '/public/assets/byteupriselogo.png';
-import logo from '/public/assets/logo.png';
+// Logos (FIXED: no import from public/assets)
+const byteupriselogo: string = '/assets/byteupriselogo.png';
+const logo: string = '/assets/logo.png';
 // import MyFreelanceWork from './MyFreelanceWork';
-
-
 
 
 // --- Work Experience Data Interface and Array ---
@@ -95,6 +93,8 @@ const workData: WorkExperience[] = [
     ],
   },
 ];
+// --- End Work Experience Data ---
+
 // --- End Work Experience Data ---
 
 

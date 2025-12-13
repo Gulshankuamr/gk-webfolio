@@ -140,12 +140,13 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <NavBar />
-        {children}
-        <Footer />
-        <SpeedInsights /> {/* ✅ Added for performance monitoring */}
+         suppressHydrationWarning
+  className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+>
+  <NavBar />
+  {children}
+  <Footer />
+  <SpeedInsights />{/* ✅ Added for performance monitoring */}
       </body>
     </html>
   );

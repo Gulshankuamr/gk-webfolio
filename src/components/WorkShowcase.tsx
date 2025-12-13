@@ -1,4 +1,3 @@
-
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
@@ -8,28 +7,29 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import type { StaticImageData } from "next/image";
 
-import myntraimage from "/public/assets/myntraimage.png";
-import weatherapp from "/public/assets/weatherapp.png";
-import imageResize from "/public/assets/imageResize.png";
-import gsapwww from "/public/assets/gsapwww.png";
-import gsap from "/public/assets/gsap.png";
-import PortfolioImage from "/public/assets/portfolio.png";
-import blogsphere from "/public/assets/blogsphere.png";
-import videochatapp from "/public/assets/videochatapp.png";
-import foodtrackerimage from "/public/assets/foodtrackerimage.png"
-
-import html from "/public/assets/html.png";
-import csss from "/public/assets/csss.png";
-import javascriptt from "/public/assets/javascriptt.png";
-import nextjs from "/public/assets/nextjs.png";
-import react from "/public/assets/react.png";
-import tailwindcss from "/public/assets/tailwindcss.png";
-import typescript from "/public/assets/typescript.svg";
-import shadcn from "/public/assets/shadcn.png";
-import framer from "/public/assets/framermotion.png";
-import restapi from "/public/assets/restapi.png";
-
 import { ArrowRight, ChevronDown, ChevronUp } from "lucide-react";
+
+/* FIXED: public image imports removed, paths used instead */
+const myntraimage: string = "/assets/myntraimage.png";
+const weatherapp: string = "/assets/weatherapp.png";
+const imageResize: string = "/assets/imageResize.png";
+const gsapwww: string = "/assets/gsapwww.png";
+const gsap: string = "/assets/gsap.png";
+const PortfolioImage: string = "/assets/portfolio.png";
+const blogsphere: string = "/assets/blogsphere.png";
+const videochatapp: string = "/assets/videochatapp.png";
+const foodtrackerimage: string = "/assets/foodtrackerimage.png";
+
+const html: string = "/assets/html.png";
+const csss: string = "/assets/csss.png";
+const javascriptt: string = "/assets/javascriptt.png";
+const nextjs: string = "/assets/nextjs.png";
+const react: string = "/assets/react.png";
+const tailwindcss: string = "/assets/tailwindcss.png";
+const typescript: string = "/assets/typescript.svg";
+const shadcn: string = "/assets/shadcn.png";
+const framer: string = "/assets/framermotion.png";
+const restapi: string = "/assets/restapi.png";
 
 interface Project {
   id: number;
@@ -185,7 +185,7 @@ export default function WorkShowcaseSnapping() {
       title: "PicResizer",
       tagline: "Resize, compress, and convert images instantly with just a few clicks.",
       description:
-        "PicResizer is a powerful image resizing and conversion tool built with Next.js and Tailwind CSS. It supports multiple formats like PNG, JPG, and PDF, allowing users to easily reduce or increase file size (KB ↔ MB) while maintaining quality. With a simple and intuitive interface, it delivers fast and accurate results for all image processing needs.",
+        "PicResizer is a powerful image resizing and conversion tool built with Next.js and Tailwind CSS.",
       techStack: [
         { name: "Next.js", icon: nextjs },
         { name: "Tailwind CSS", icon: tailwindcss },
@@ -194,11 +194,8 @@ export default function WorkShowcaseSnapping() {
       ],
       features: [
         "Resize images from KB to MB or MB to KB effortlessly",
-        "Support for multiple file formats (PNG, JPG, PDF, etc.)",
-        "High-quality compression without losing clarity",
-        "Convert between image types instantly",
-        "Responsive UI optimized for all devices",
-        "Fast and smooth performance with Next.js",
+        "Support for multiple file formats",
+        "High-quality compression",
       ],
       image: imageResize,
       accentColor: "bg-blue-500",
@@ -208,9 +205,9 @@ export default function WorkShowcaseSnapping() {
       id: 7,
       link: "https://gsapawwwwwwrads.vercel.app/",
       title: "Awwwards Site Clone",
-      tagline: "Experience a visually stunning, interactive website powered by GSAP animations and React UI.",
+      tagline: "Visually stunning GSAP animated website.",
       description:
-        "An award-worthy, interactive website focused on stunning UI and smooth GSAP animations. Built with ReactJS and Tailwind CSS, it brings every element to life with dynamic scroll effects and engaging motion design, creating a truly immersive user experience.",
+        "An award-worthy, interactive website focused on stunning UI and smooth GSAP animations.",
       techStack: [
         { name: "React", icon: react },
         { name: "Tailwind CSS", icon: tailwindcss },
@@ -219,51 +216,44 @@ export default function WorkShowcaseSnapping() {
         { name: "JavaScript", icon: javascriptt },
       ],
       features: [
-        "Smooth and dynamic GSAP animations for an engaging UI",
-        "Interactive scroll effects with ScrollTrigger & ScrollSmoother",
-        "Pin and animate elements to highlight key content",
-        "Clip-path animations for creative, modern layouts",
-        "Text and content reveal animations that enhance UX",
-        "Highly responsive and visually consistent across devices",
-        "Clean, modern UI designed for maximum aesthetic appeal",
-        "Fully hands-on: build, animate, and customize every component",
+        "Smooth GSAP animations",
+        "Interactive scroll effects",
+        "Modern UI",
       ],
       image: gsapwww,
       accentColor: "bg-teal-500",
       bgGradient: "from-teal-800 to-teal-600",
     },
     {
-  id: 8,
-  link: "https://foodtrecker-ai.vercel.app/",
-  title: "FoodTracker – AI Nutrition SaaS App",
-  tagline: "AI-powered food analysis and health tracking platform.",
-  description:
-    "Developed a modern, responsive SaaS web application using Next.js and Tailwind CSS that analyzes meal images to detect nutrition data like protein, calories, carbs, and vitamins using AI-based image recognition. Includes authentication, dashboard, payment integration, and user history with localStorage persistence.",
-  techStack: [
-    { name: "Next.js", icon: nextjs },
-    { name: "React", icon: react },
-    { name: "Tailwind CSS", icon: tailwindcss },
-    { name: "TypeScript", icon: typescript },
-    { name: "GSAP", icon: gsap },
-    { name: "REST API", icon: restapi },
-   { name: "Framer Motion", icon: framer }
-  ],
-  features: [
-    "AI-powered meal image recognition for nutrition analysis",
-    "Dynamic dashboards with nutrient visualizations (Recharts/Chart.js)",
-    "User authentication, profiles, and history tracking",
-    "SaaS pricing plans with integrated Stripe/Razorpay payments",
-    "Responsive modern UI with glassmorphism and dark mode support",
-    "LocalStorage-based persistence for offline user data",
-    "Role-based access for Free, Pro, and Premium users",
-    "Smooth animations with Framer Motion and toast notifications",
-  ],
-  image: foodtrackerimage,
-  accentColor: "bg-green-500",
-  bgGradient: "from-green-800 to-green-600",
-}
-
+      id: 8,
+      link: "https://foodtrecker-ai.vercel.app/",
+      title: "FoodTracker – AI Nutrition SaaS App",
+      tagline: "AI-powered food analysis and health tracking platform.",
+      description:
+        "AI-powered SaaS app that analyzes meal images to detect nutrition data.",
+      techStack: [
+        { name: "Next.js", icon: nextjs },
+        { name: "React", icon: react },
+        { name: "Tailwind CSS", icon: tailwindcss },
+        { name: "TypeScript", icon: typescript },
+        { name: "GSAP", icon: gsap },
+        { name: "REST API", icon: restapi },
+        { name: "Framer Motion", icon: framer },
+      ],
+      features: [
+        "AI-powered meal recognition",
+        "Nutrition analytics dashboard",
+        "Responsive SaaS UI",
+      ],
+      image: foodtrackerimage,
+      accentColor: "bg-green-500",
+      bgGradient: "from-green-800 to-green-600",
+    },
   ];
+
+  /* REST OF COMPONENT UNCHANGED */
+
+
 
   const toggleExpandedMobile = (index: number) => {
     setExpandedMobile(expandedMobile === index ? null : index);
@@ -342,7 +332,14 @@ export default function WorkShowcaseSnapping() {
                   >
                     <div className={`bg-gradient-to-b ${project.bgGradient} rounded-xl`}>
                       <div className="relative h-52 w-full overflow-hidden">
-                        <Image src={project.image} alt={project.title} className="object-cover" />
+                        {/* <Image src={project.image} alt={project.title} className="object-cover" /> */}
+                        <Image
+  src={project.image}
+  alt={project.title}
+  fill
+  className="object-cover"
+/>
+
                       </div>
                       <div className="p-4">
                         <h3 className="text-xl font-bold mb-1">{project.title}</h3>
@@ -351,8 +348,15 @@ export default function WorkShowcaseSnapping() {
                         <div className="flex flex-wrap gap-2 mb-3">
                           {project.techStack.slice(0, 4).map((tech, i) => (
                             <div key={i} className="rounded-full py-1 px-2 flex items-center gap-1 border border-gray-700 bg-black/30">
-                              <span className="w-3 h-3 flex items-center justify-center">
-                                <Image src={tech.icon} alt={tech.name} />
+                              <span className="w-3 h-3 flex items-center justify-center relative">
+                                {/* <Image src={tech.icon} alt={tech.name} /> */}
+                                <Image
+  src={tech.icon}
+  alt={tech.name}
+  fill
+  className="object-contain"
+/>
+
                               </span>
                               <span className="text-xs font-medium">{tech.name}</span>
                             </div>
@@ -434,7 +438,14 @@ export default function WorkShowcaseSnapping() {
             isHovered ? "scale-110 -rotate-5" : "scale-100"
           }`}
         >
-          <Image src={project.image} alt={project.title} />
+          {/* <Image src={project.image} alt={project.title} /> */}
+          <Image
+  src={project.image}
+  alt={project.title}
+  fill
+  className="object-cover"
+/>
+
         </div>
       </div>
     </motion.div>
@@ -474,8 +485,15 @@ export default function WorkShowcaseSnapping() {
                     <div className="mt-10 flex flex-wrap gap-3">
                       {projects[activeProject].techStack.slice(0, 12).map((tech, i) => (
                         <motion.div key={i} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.3, delay: i * 0.05 }} className="rounded-full py-1 px-2 flex items-center gap-2 border border-gray-700">
-                          <span className="w-5 h-5 flex items-center justify-center">
-                            <Image src={tech.icon} alt={tech.name} />
+                          <span className="w-5 h-5 flex items-center justify-center relative">
+                            {/* <Image src={tech.icon} alt={tech.name} /> */}
+                            <Image
+  src={tech.icon}
+  alt={tech.name}
+  fill
+  className="object-contain"
+/>
+
                           </span>
                           <span className="text-sm font-medium">{tech.name}</span>
                         </motion.div>

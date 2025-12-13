@@ -9,7 +9,8 @@ import {  Linkedin,  Mail, Instagram , FileUser} from 'lucide-react';
 
 
 // Import social icons
-import profileImage from '/public/gulshan.jpg'; // Replace with your actual image path
+const gulshan = "/gulshan.jpg";
+ // Replace with your actual image path
 // import resumegk from '/public/resumegk.pdf'; // Replace with your actual image path
 
 interface TimelineItem {
@@ -340,7 +341,7 @@ const Tooltip = ({
             <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-purple-600 to-pink-500 p-1">
               <div className="rounded-xl overflow-hidden aspect-square">
                 <Image
-                  src={profileImage}
+                 src={gulshan}
                   alt="Gulshan Kumar"
                   width={400}
                   height={400}

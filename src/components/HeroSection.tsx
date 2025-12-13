@@ -17,6 +17,9 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/60 z-0">
         {/* Star field effect */}
       </div>
+      <h1 style={{ color: "red", fontSize: "32px" }}>
+        {/* HOME UPDATED – VERCEL TEST */}
+      </h1>
 
       {/* Planet curve at bottom - Responsive */}
       <div className="absolute border-b-4 sm:border-b-6 md:border-b-8 mb-1 sm:mb-2 border-black bottom-0 left-0 right-0 h-40 sm:h-48 md:h-52 lg:h-40 xl:h-32 bg-purple-900 rounded-t-[100%] blur-md z-0"></div>

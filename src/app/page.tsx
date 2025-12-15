@@ -11,6 +11,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import Link from "next/link";
 import WorkExperience from "@/components/WorkExperience";
+import AiPortfolioAssistant from "@/components/AiPortfolioAssistant";
 
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
 
     
      <Services/>
+     <AiPortfolioAssistant/>
      <Marquee/>
       
     </div>

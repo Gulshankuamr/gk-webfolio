@@ -1,3 +1,4 @@
+import AiPortfolioAssistant from '@/components/AiPortfolioAssistant'
 import Blog from '@/components/Blog'
 import React from 'react'
 // import SplashCursor from '../about/SplashCursor'
@@ -8,6 +9,7 @@ function page() {
     <div className='pt-5 bg-black'>
         <Blog/>
         {/* <SplashCursor/> */}
+        <AiPortfolioAssistant/>
 
     </div>
   )

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {  Linkedin,  Mail, Instagram , FileUser} from 'lucide-react';
+import AiPortfolioAssistant from '@/components/AiPortfolioAssistant';
 // import SplashCursor from './SplashCursor'
 
 
@@ -576,6 +577,7 @@ const Tooltip = ({
             </div>
           </div>
         </div>
+        <AiPortfolioAssistant/>
       </section>
          {/* <SplashCursor /> */}
     </div>

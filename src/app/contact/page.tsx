@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { FaWhatsapp, FaInstagram, FaLinkedin, FaPhone } from "react-icons/fa";
+import AiPortfolioAssistant from "@/components/AiPortfolioAssistant";
 // import SplashCursor from "../about/SplashCursor";
 
 // ----------------------------
@@ -250,7 +251,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-
+      <AiPortfolioAssistant/>
       {/* <SplashCursor /> */}
     </section>
   );

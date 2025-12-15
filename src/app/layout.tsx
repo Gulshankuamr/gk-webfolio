@@ -171,23 +171,71 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/* =========================
+   SEO + GOOGLE VERIFICATION
+   ========================= */
 export const metadata: Metadata = {
-  title: "Gulshan Kumar | Full Stack Web Developer",
+  title: "Gulshan Kumar - Full Stack Web Developer | Portfolio",
   description:
-    "Gulshan Kumar portfolio website. Full Stack Web Developer skilled in React, Next.js, MERN Stack. View projects, skills, and contact details.",
+    "Portfolio website of Gulshan Kumar — Full Stack Web Developer from Lucknow, Uttar Pradesh, India. Explore projects, skills, and contact details.",
   authors: [{ name: "Gulshan Kumar" }],
   icons: "/myimage.png",
+
   keywords: [
-    "Gulshan Kumar",
-    "GK Webfolio",
     "Gulshan Kumar Portfolio",
-    "Full Stack Web Developer",
-    "React Developer",
-    "Next.js Developer",
+    "Gulshan Kumar Web Developer",
+    "Gulshan Kumar Full Stack Developer",
+    "Gulshan Kumar React Developer",
+    "Gulshan Kumar Next.js Developer",
     "MERN Stack Developer",
     "Web Developer in Lucknow",
     "Freelance Web Developer India",
+    "gkweb",
+    "gkwebfolio",
+    "gk",
+    "Gk",
+    "gk-web",
+    //  Personal Branding
+    "Gulshan Kumar Portfolio",
+    "Gulshan Kumar Web Developer",
+    "Gulshan Kumar Full Stack Developer",
+    "Gulshan Kumar Frontend Developer",
+    "Gulshan Kumar Backend Developer",
+    "Gulshan Kumar React Developer",
+    "Gulshan Kumar Next.js Developer",
+    "Gulshan Kumar MERN Stack Developer",
+    "Gulshan Kumar JavaScript Developer",
+    "Gulshan Kumar TypeScript Developer",
+    "Gulshan Kumar UI/UX Designer",
+    "Gulshan Kumar Freelancer",
+    "Gulshan Kumar Software Engineer",
+    "Gulshan Kumar Programmer",
+
+    // Location-based SEO
+    "Web Developer in Lucknow",
+    "Frontend Developer in Lucknow",
+    "Backend Developer in Lucknow",
+    "Full Stack Developer in Lucknow",
+    "Freelance Web Developer in Lucknow",
+    "Full Stack Developer in Uttar Pradesh",
+    "Freelance Web Developer India",
+
+    // Services
+    "Hire Web Developer",
+    "Hire Full Stack Developer",
+    "Hire React Developer",
+    "Freelance Web Developer",
+    "Website development services",
+    "Custom website development",
+    "Responsive web design",
+    "SEO optimized websites",
+
   ],
+
+  // ✅ GOOGLE SEARCH CONSOLE VERIFICATION (ONLY THIS IS NEEDED)
+  verification: {
+    google: "googlef20bc6584068a887",
+  },
 };
 
 export default function RootLayout({
@@ -198,14 +246,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* ✅ Google Search Console Verification */}
-        <meta
-          name="google-site-verification"
-          content="googlef20bc6584068a887"
-        />
-          {/* <meta name="google-site-verification" content="googlef20bc6584068a887" /> */}
-
-        {/* ✅ Structured Data (SEO Boost) */}
+        {/* ✅ Structured Data (Schema.org) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -213,14 +254,20 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Gulshan Kumar",
-              url: "https://gk-webfolio.vercel.app",
               image: "https://gk-webfolio.vercel.app/myimage.png",
               jobTitle: "Full Stack Web Developer",
+              url: "https://gk-webfolio.vercel.app",
               sameAs: [
-                "https://github.com/Gulshankuamr",
                 "https://www.linkedin.com/in/gulshan-kumar-61b446253/",
+                "https://github.com/Gulshankuamr",
                 "https://www.instagram.com/developer_tipss/",
               ],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Lucknow",
+                addressRegion: "Uttar Pradesh",
+                addressCountry: "India",
+              },
             }),
           }}
         />

@@ -234,7 +234,7 @@ export const metadata: Metadata = {
 
   // ✅ GOOGLE SEARCH CONSOLE VERIFICATION (ONLY THIS IS NEEDED)
   verification: {
-    google: "googlef20bc6584068a887",
+    google: "google7f3ee851b7c3021f",
   },
 };
 
